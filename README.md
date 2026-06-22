@@ -1,8 +1,8 @@
-# Adewunmi Ajike - Product Manager
+# Adewunmi Ajike - Senior AI Product Manager
 
 ## 🚀 I Build AI Products That Matter
 
-I'm a product manager focused on AI/LLM products. I combine strategic thinking with hands-on technical skills.
+I'm a product manager with 5+ years of experience focused on AI/LLM products. I combine strategic thinking with hands-on technical skills.
 
 **What I Do:**
 - 💻 Build AI products (Python, SQL, LLM APIs)
@@ -52,7 +52,7 @@ I'm building this publicly to:
 ## Get In Touch
 
 - **LinkedIn:** https://www.linkedin.com/in/adewunmiajike
-- **Instagram:** @adewunmiajike
+- **Instagram:** https://www.instagram.com/adewunmiajike
 - **Email:** wunmiajike@gmail.com
 
 ---
