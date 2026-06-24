@@ -66,4 +66,9 @@ I'm building this publicly to:
 
 ---
 
+## 📝 Latest Articles
+
+### Week 1: Foundation Setup
+https://medium.com/@adewunmiajike/why-i-am-building-in-public-54b6c25a35fa?sharedUserId=adewunmiajike
+
 *Last updated: 6/22/2026*
