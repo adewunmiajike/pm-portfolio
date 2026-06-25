@@ -1,0 +1,108 @@
+# Churn Analysis - Key Findings
+
+## Executive Summary
+Analyzed 30 customers over Q1 2024. Overall churn rate: 50%. Root cause: Users who don't purchase within 7 days have 80% churn. Users who purchase on signup day have 93% retention.
+
+---
+
+## Finding #1: Time-to-Value is Critical
+
+**The Data:**
+- Same-day purchasers: 6.7% churn (93% retention)
+- Delayed purchasers (8+ days): 80% churn
+- Never purchased: 100% churn
+
+**Why This Matters:**
+New users must experience value immediately. If they don't buy on Day 1, they're likely to never return. The first week is make-or-break.
+
+**How We Validated:**
+Grouped users by days between signup and first purchase. Calculated churn rate for each group. Clear pattern emerged.
+
+---
+
+## Finding #2: Early Signup Cohorts Had Higher Churn
+
+**The Data:**
+- Week of Jan 1-7: 57% churn
+- Week of Jan 8-14: 45% churn
+- Average trend: Improving over time
+
+**Why This Matters:**
+Could indicate: product improvements, better onboarding, seasonal factors. January signups had different behavior.
+
+**How We Validated:**
+Grouped by signup week. Calculated churn rate per week. Trend shows improvement.
+
+---
+
+## Finding #3: Active Users Have 100% Retention
+
+**The Data:**
+- Users with 8+ orders: 0% churn
+- Users with 2-3 orders: 25% churn  
+- Users with 1 order: 50% churn
+
+**Why This Matters:**
+Habit formation is key. Once users reach 8 orders, they stay. The challenge is getting them to 8 orders.
+
+**How We Validated:**
+Compared total_orders column with churn. Clear correlation.
+
+---
+
+## Recommendations (Priority Order)
+
+### 1. Improve First-Day User Experience (Impact: ~15% churn reduction)
+
+**Problem:** Only 50% of users purchase on signup day
+
+**Solution:** 
+- Simplify checkout (reduce steps from 5 to 2)
+- Offer first-time buyer incentive (free shipping, 10% off)
+- Create urgency (limited time offer)
+
+**Success Metric:** Track % of users who purchase on Day 1
+
+**Implementation Time:** 2 weeks
+
+---
+
+### 2. Re-engagement Campaign for Day 3-7 Users (Impact: ~10% churn reduction)
+
+**Problem:** Users who don't buy Day 1 become increasingly likely to churn
+
+**Solution:**
+- Auto-send personalized product recommendations on Day 3
+- A/B test messaging (discount vs. social proof vs. scarcity)
+- Test different send times
+
+**Success Metric:** Track conversion rate of Day 3-7 email campaigns
+
+**Implementation Time:** 1 week
+
+---
+
+### 3. Build Product Habit Loop (Impact: ~20% churn reduction)
+
+**Problem:** Users who reach 8 orders have 0% churn, but most don't get there
+
+**Solution:**
+- Loyalty program (points per order, unlock rewards)
+- Subscription option (auto-order every X days with discount)
+- Community features (reviews, sharing, trending)
+
+**Success Metric:** Track % of users reaching 4, 6, 8 orders
+
+**Implementation Time:** 4-6 weeks
+
+---
+
+## Financial Impact
+
+**Current State:** 50% churn, 30 customers → 15 retained
+**Implementing Recommendation #1:** 65% retention → +4 additional retained customers
+**Implementing All 3:** 75% retention → +7 additional retained customers
+
+**Assuming $500 lifetime value per customer:**
+- Recommendation #1: +$2K revenue
+- All 3 recommendations: +$3.5K revenue
