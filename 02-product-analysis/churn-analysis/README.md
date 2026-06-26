@@ -9,18 +9,16 @@ Analyzing why customers churn after their first week. Finding root causes and re
 - Time-to-value: Track when users take key actions
 
 ## Key Findings
-[To be filled in after analysis]
+- Same-day purchasers: 6.7% churn
+- 8+ day purchasers: 80% churn
+- Habit formation critical: 8+ orders = 0% churn
 
 ## Recommendations
-[To be filled in after analysis]
-
-## How to Run
-1. Install dependencies: `pip install jupyter pandas matplotlib numpy`
-2. Run: `jupyter notebook`
-3. Open `analysis.ipynb`
-4. Run all cells
+1. Improve first-day experience (15% impact)
+2. Re-engagement emails (10% impact)
+3. Build habit loop (20% impact)
 
 ## Files
-- `analysis.ipynb` - Main analysis notebook
-- `findings.md` - Key insights
+- `analysis.ipynb` - Full analysis notebook
+- `findings.md` - Detailed findings + recommendations
 - `data/sample_data.csv` - Sample dataset
