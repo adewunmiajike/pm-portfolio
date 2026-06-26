@@ -1,0 +1,56 @@
+# KPI Definitions
+
+## Business Goal #1: User Adoption
+
+**Metric:** Monthly Active Users (MAU)
+- **Definition:** Unique users who used product in past 30 days
+- **Target:** 20,000 by end of Q2
+- **Current:** 12,450
+- **Owner:** Growth team
+
+**Leading Indicators:**
+- DAU (Daily Active Users) - early signal of engagement
+- Signup rate - top of funnel health
+- Email open rate - user interest
+
+**Lagging Indicators:**
+- Churn rate - ultimate health metric
+- NPS - user satisfaction
+
+---
+
+## Business Goal #2: AI Quality
+
+**Metric:** Output Accuracy
+- **Definition:** % of AI responses rated 4-5 on 5-point quality scale
+- **Target:** 85%
+- **Current:** 78%
+- **Owner:** AI/Product team
+
+**Leading Indicators:**
+- Prompt variant test results
+- User feedback sentiment
+- Support tickets about "wrong answer"
+
+**Lagging Indicators:**
+- Retention for power users
+- Premium tier adoption
+
+---
+
+## Business Goal #3: Revenue
+
+**Metric:** Monthly Recurring Revenue (MRR)
+- **Definition:** Revenue from active subscriptions
+- **Target:** $50K by Q3
+- **Current:** $28,500
+- **Owner:** Monetization team
+
+**Leading Indicators:**
+- Trial signup rate
+- Trial-to-paid conversion
+- Premium tier adoption rate
+
+**Lagging Indicators:**
+- Customer lifetime value
+- Expansion revenue per customer
