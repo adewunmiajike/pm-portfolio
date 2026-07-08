@@ -1,6 +1,6 @@
 # Adewunmi Ajike — Senior AI Product Manager
 
-**5+ years shipping AI and ML products at enterprise scale · TELUS · Bell Canada**
+**5+ years shipping AI and ML products at enterprise scale**
 
 I build AI products that generate real business outcomes — fraud detection platforms, pricing intelligence simulators, competitive intelligence tools, and GenAI agents — across Canada's largest telecoms. This GitHub documents the work, the thinking, and the frameworks behind it.
 
