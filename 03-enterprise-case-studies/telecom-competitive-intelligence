@@ -1,0 +1,90 @@
+# Competitive Intelligence (CI) Dashboard
+**TELUS · Senior AI Product Manager · 2024 – Present**
+
+---
+
+## The problem
+
+TELUS's competitive intelligence process was entirely manual: team members scraping competitor websites by hand, copying data into spreadsheets, and sharing updates inconsistently. The result: the team was capturing only 10–15% of actual market activity, the data was often stale by the time it reached decision-makers, and the process was unsustainable because it depended entirely on whoever happened to be assigned to it that week.
+
+The "8-month rotation reset" was a real operational failure mode — every time the person doing CI rotated off, institutional knowledge walked out the door with them.
+
+---
+
+## My role
+
+I took ownership of a fragmented, "side-of-the-desk" activity and productized it into a scalable enterprise tool. This was not a planned product when I joined — I identified it as a gap, built the case, and drove it from pilot to TELUS-wide deployment.
+
+---
+
+## What I built
+
+An automated, AI-powered competitive intelligence platform using GenAI and multimodal extraction to monitor competitor pricing, offers, and promotions in near real time.
+
+**Phased adoption strategy I designed:**
+
+| Phase | Scope | Rationale |
+|---|---|---|
+| Phase 1 | Bell and Videotron (primary competitors) | Build trust with high-signal data before expanding |
+| Phase 2 | Flanker brands | Extend to secondary competitive set |
+| Phase 3 | EPP (Employee Purchase Plans) | Complex: required handling login-gated competitor pages |
+| Phase 4 | Physical Channel Monitoring | AI integration for in-store competitive coverage |
+
+The phasing was deliberate. Starting with the most trusted data source (primary competitors) built organizational confidence in the tool before asking stakeholders to rely on it for edge cases.
+
+---
+
+## Key product decisions
+
+**From raw data to actionable alerts:** Early users found the raw data too complex to act on. I pushed the engineering team to implement "From-to" pricing alerts — actionable summaries of what changed and by how much, rather than raw price point data. This was a usability decision that drove adoption.
+
+**Black Friday War Room:** I recognized that standard daily scraping was insufficient during peak retail periods. On November 21, 2025, I launched a specialized Black Friday Dashboard with hourly scraping from 5AM to 9PM — giving TELUS real-time parity with competitor moves during the highest-stakes retail week of the year.
+
+**Physical channel expansion:** By identifying that digital channels accounted for only 15% of the team's total competitive monitoring workload, I positioned the project for its most valuable phase: AI-integrated monitoring of physical retail pricing — which has never been automated at scale.
+
+---
+
+## Stakeholder crisis I resolved
+
+In March 2026, a critical stakeholder (director-level) refused to sign off on $102K in Q1 benefits, citing low daily usage figures and a disagreement with the FTE savings methodology.
+
+**What I did not do:** Retreat, escalate to my manager, or let the project stall.
+
+**What I did:** Scheduled a deep-dive methodology walkthrough directly with the stakeholder. In that session, I addressed the usage concern by identifying a massive unmet opportunity — Physical Channel Expansion — that the skeptic had not considered. I turned a potential program cancellation into a validated Q2 roadmap. The stakeholder signed off.
+
+This is the kind of situation that kills AI products at enterprise companies. It requires the PM to stay in the room and reframe, not just defend.
+
+---
+
+## Technical leadership
+
+- Managed vendor relationship for IP proxy infrastructure (Poltak Jefferson) — renewal timing, subscription optimization, and preventing scraping downtime from contention issues
+- Led formal JIRA-documented evaluation on whether to duplicate vs. modify the prototype in place — chose modification with documented reasoning to preserve usage history and minimize live component risk
+- Secured DEP #48455 (Data Enablement Plan) sign-off by September 2025
+
+---
+
+## Outcomes
+
+| Metric | Result |
+|---|---|
+| Manual workload captured before | 10–15% of market activity |
+| After automation | Near-complete competitive coverage |
+| User growth | Pilot → TELUS-wide public tool |
+| Annual OPEX savings potential | $1.4M |
+| Visibility | Active usage tracking via Google Analytics; VP and CIO-level reporting |
+| Migration | Lab project → official TELUS BI Layer (January 2026) |
+
+---
+
+## Technical stack (directional)
+
+- GenAI and multimodal extraction for web data ingestion
+- Automated web scraping with IP proxy management
+- Google Analytics for usage tracking
+- TELUS BI Layer integration
+- "From-to" change detection and alerting logic
+
+---
+
+*[← Back to portfolio index](../README.md)*
