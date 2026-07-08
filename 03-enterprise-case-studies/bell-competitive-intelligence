@@ -1,0 +1,66 @@
+# Real-Time Competitor Offer Dashboard
+**Bell Canada · Technical Product Manager · 2022 – 2024**
+
+---
+
+## The problem
+
+Bell's competitive pricing team was manually monitoring competitor offers — a process that required hundreds of hours per year and still missed the majority of market activity. The team had no reliable, real-time view of what competitors were offering, which meant pricing decisions were being made on stale or incomplete intelligence.
+
+My diagnosis: **800+ hours per year** of manual competitor monitoring work was producing a fragmented, inconsistent picture of the market.
+
+---
+
+## My role
+
+I led the development of a real-time competitor offer dashboard from identification of the opportunity through to delivery and adoption.
+
+---
+
+## What I built
+
+A real-time competitive intelligence dashboard with 20+ live metrics, powered by recommendation logic and ranking signals.
+
+**Core capabilities:**
+- Real-time monitoring of competitor offers across channels
+- 20+ metrics tracked simultaneously
+- Recommendation and ranking logic to surface the most actionable competitive signals
+- Pricing decision support directly embedded in the workflow of the pricing and go-to-market teams
+
+**The specific models that fed this product:**
+
+### Competitor Offer Mention Model
+An AI model using NLP to identify keywords mentioned during customer phone calls when a customer referenced a competitor offer. When a customer said, on a live call, "I got a better offer from [competitor]" — the model would pick up the keywords and surface this in real time to the relevant teams.
+
+This gave Bell's pricing team a direct signal from customers about where they were losing competitive battles — not from analyst reports, but from live call data at scale.
+
+### Agent Pitch Model
+A model detecting whether or not an agent pitched a retention or upgrade offer during a customer interaction. Used to measure adherence to recommended sales plays and identify coaching opportunities.
+
+### Cancellation Reason Model
+Identifies the top reasons customers call to cancel their services, enabling proactive response strategy and informing the win-back and save-back campaign design.
+
+---
+
+## Key outcomes
+
+| Metric | Result |
+|---|---|
+| Manual hours eliminated | 800+ per year |
+| Live metrics tracked | 20+ |
+| Speed to insight | Near real-time vs. days-old manual reports |
+| Business impact | Accelerated pricing decisions, improved go-to-market responsiveness |
+
+---
+
+## Technical stack (directional)
+
+- Real-time speech data ingestion
+- NLP keyword detection (Competitor Offer Mention Model)
+- Recommendation and ranking signals
+- ML classification (Agent Pitch Model, Cancellation Reason Model)
+- Dashboard with real-time data refresh
+
+---
+
+*[← Back to portfolio index](../README.md)*
