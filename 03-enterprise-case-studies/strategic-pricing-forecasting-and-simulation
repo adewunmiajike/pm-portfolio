@@ -1,0 +1,91 @@
+# Look Forward Model — AI Pricing Simulator
+**TELUS · Senior AI Product Manager · Mobility Pricing Portfolio · 2024 – Present**
+
+---
+
+## The problem
+
+TELUS pricing analysts were spending 3 hours per scenario to manually model the financial and volume impact of potential pricing decisions using Excel. The process was slow, inconsistent, and bottlenecked the team's ability to respond to market moves in real time.
+
+The deeper issue: pricing decisions at a national telecom involve enormous financial stakes. When a competitor moves on pricing and it takes your team 3 hours to model a response — or worse, when the model is only as good as whoever built it that day — the business is flying partially blind. The pricing team needed a co-pilot, not another spreadsheet.
+
+---
+
+## My role
+
+I was the Product Manager for the Mobility Pricing Portfolio, responsible for defining, building, and shipping the Look Forward Model as the flagship product of a broader pricing intelligence suite.
+
+I owned: problem framing, technical requirements, model architecture decisions, stakeholder alignment, go-live strategy, and ongoing adoption.
+
+---
+
+## What I built
+
+The Look Forward Model is an AI-driven simulator that allows pricing analysts to generate volume and financial impact forecasts for pricing scenarios in approximately 20 minutes — an 85%+ reduction in time-to-insight.
+
+**Core models:**
+
+| Model | What it predicts | Accuracy achieved |
+|---|---|---|
+| Renewal Model (HUP Finance) | Device-plan renewal volumes | 86.3% R-squared, 17.7% MAPE |
+| Activation Model (BYOP & Finance) | New plan activations | 81.7% R-squared, 20% MAPE |
+| Deactivation/Churn Model | Phase 1 data structuring complete | In development |
+
+All MVP models exceeded the 70% R-squared target and the <30% MAPE target during testing.
+
+**Modeling approach:**
+
+I selected and oversaw a hierarchical linear modeling approach (mixed modeling) that accounts for both fixed effects (general market trends) and random effects (segment-level variations). This was not the default choice — it was the right choice for the granularity we needed.
+
+**Model granularity:** Channel → Pricing Region (ROC, QC) → Plan Group (5G, 5G+ US/MEX) → Device Group/Generation. This level of specificity was a deliberate design decision I pushed for, because national-level averages were masking the segment-level dynamics that actually drove revenue.
+
+**Key inputs and levers the model supports:**
+- Pricing levers: Finance Floor, STIM amount, Bill Credit amount
+- Dynamic features: seasonality, competitive pricing (from real-time trackers), account attributes (age, number of lines), online clickstream data (renewal page visits)
+
+---
+
+## Strategic decisions I made
+
+**The "Three-Way Synergy" framework:** I established the Look Forward Model as part of an integrated three-product ecosystem — Look Back (historical intelligence) → Look Forward (predictive) → Market Mix Model (long-term simulation). This wasn't technically required for the first product, but it was the right architectural decision because it gave us a portfolio rather than a one-off tool. Each product feeds the next.
+
+**Tiered pricing experimentation:** I developed a methodology to categorize cities into three tiers based on pricing sensitivity. This allowed TELUS to match competitor prices in high-sensitivity Tier 1 cities while protecting profit margins in Tier 2 and 3 regions — hyper-local experimentation at national scale.
+
+**Black Friday impact quantification:** The model revealed that approximately 21% of Black Friday renewal volume was driven by the holiday effect itself, independent of promotional credits or device STIM. This was a non-obvious insight that directly informed promotional investment decisions.
+
+---
+
+## Key insights delivered
+
+The model proved that **device promotions (STIM and BiB) drive significantly higher volume impact compared to simple rate changes**. This finding shifted how the pricing team prioritized promotional levers — a strategic shift made possible only because we had a model rigorous enough to isolate the variables.
+
+---
+
+## Adoption and integration
+
+I developed the training roadmap and handbook for three user types: base team, planning analysts, and pricing primes. The transition from Excel to the AI tool was seamless because adoption was treated as a product problem, not a training problem.
+
+**Project Janus integration:** I led the mapping of 49–50 critical data points between the Janus Data Modernization Project and the Look Forward Model, including 27 plan-related and 15 device-related data points in the TOM API. This was unglamorous but essential — a model is only as good as its data foundation.
+
+---
+
+## Governance
+
+I managed the full governance lifecycle for this AI system, including:
+- DEP 42413 (Market Pricing Analysis) and DEP 48455
+- GenAI system audits: model logging compliance, record disposal (Questions 10.11 and 7.5)
+- Feature engineering pipelines: three independent pipelines (activation, renewal, finance) with built-in quality check reports
+
+---
+
+## Technical stack (directional)
+
+- Hierarchical linear modeling / mixed modeling
+- GCP / BigQuery for data infrastructure
+- Feature engineering with automated quality checks
+- Competitive pricing tracker integration
+- Looker for analyst dashboards
+
+---
+
+*[← Back to portfolio index](../README.md)*
