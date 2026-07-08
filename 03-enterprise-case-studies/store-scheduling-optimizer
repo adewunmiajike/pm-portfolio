@@ -1,0 +1,96 @@
+# Store Scheduling Optimization (SSO)
+**TELUS · Senior AI Product Manager · 2024 – Present**
+
+---
+
+## The problem
+
+TELUS retail stores were being staffed on intuition and static schedules that did not account for actual customer demand patterns. When stores hit above 80% occupancy without enough staff, sales conversion dropped significantly — customers waited, got frustrated, or left. Analysis proved this was costing TELUS over $1M annually in lost conversions at peak times, with a three-year recovery opportunity of $15M.
+
+The existing process: Excel-based scheduling planned 40–50 days in advance, using historical rules of thumb. No real-time signal. No predictive capability. No way to account for seasonality, local events, or promotional periods.
+
+---
+
+## My role
+
+End-to-end AI Product Manager for the SSO initiative. I owned problem framing, technical architecture decisions, phased rollout strategy, data access resolution, stakeholder alignment, and governance.
+
+---
+
+## The product I defined
+
+A two-stage AI intelligence engine replacing Excel-based scheduling across 252 TELUS retail stores.
+
+### Stage 1: Traffic Forecasting Model
+A time-series predictive engine that forecasts customer footfall at the store level, learning from:
+- Historical traffic patterns
+- Seasonality (holidays, promotional periods, TELUS-specific campaign dates)
+- Store tier and transaction-type mix (mobility vs. home internet vs. other)
+
+### Stage 2: Labor Optimizer
+A regression model that translates traffic forecasts into specific required staffing hours, factoring in:
+- Store tier and size
+- Sales trend trajectories
+- Transaction-type complexity
+
+### The "Constraint Layer" (my design)
+A post-processing business logic engine I specifically designed to apply budget caps and "saleable vs. non-saleable" rules to every AI recommendation before it reaches a store manager. This ensured all AI outputs remained operationally feasible — a responsible AI design principle that also drove adoption, because store managers trusted outputs that respected their operational reality.
+
+---
+
+## Critical strategic decisions I made
+
+**The 80% efficiency threshold as the North Star metric:** I identified that the product's core value proposition was maintaining occupancy between 60–75% — not just predicting traffic. By setting the model's target output in terms of occupancy rather than pure accuracy, I tied AI performance directly to the business outcome we were optimizing for. This was the decision that made the $15M revenue recovery claim credible.
+
+**Phased MVP — 23 stores first:** Rather than attempting a full 252-store rollout, I scoped the initial pilot to 23 stores in Alberta and Quebec, deliberately chosen to represent different utilization rates. The pilot validated the model's scalability before full commitment. This was the right call — it also gave us real-world data to improve the constraint layer before broader rollout.
+
+**Challenging the "40–50 day planning window" assumption:** The legacy requirement assumed you needed to plan staffing 40–50 days in advance. I pushed the team to test predictions at 1-week and 2-week intervals and proved to stakeholders that shorter forecast windows significantly improved accuracy. This insight challenged an organizational assumption that had never been tested quantitatively.
+
+**Dual interface strategy — Looker and Tableau:** I recognized that the planning team needed deep-dive budget analysis (Looker) while store managers needed simple daily scheduling recommendations (Tableau). Building one interface for both audiences would have served neither well. I defined both, and adoption reflected that decision.
+
+---
+
+## Fires I put out
+
+**The 2025 funding gap:** Capital funding for the project was zeroed out in 2025. Rather than letting the project die, I maintained stakeholder engagement through ongoing follow-ups, scope preservation, and re-prioritization conversations. When 2026 funding opened, SSO was at the top of the list. Projects that go quiet during a funding gap rarely come back.
+
+**Data access block:** The project faced a critical delay from a lack of raw traffic data access. I escalated to leadership, coordinated directly with data platform owners to bypass distribution list issues, and secured access to the Data Hub within the same week. A week-long delay is survivable. A month-long delay with no owner pushing it is not.
+
+**Stakeholder redundancy resolution:** A separate retail planning team (Partap Tiwana) had simultaneously requested the same AI scheduling capability. Rather than allowing two parallel efforts to fragment engineering resources, I identified the duplication, merged their requirements into the existing SSO roadmap, and prevented fragmented development. One product, one roadmap, shared benefit.
+
+---
+
+## Governance
+
+I managed the full responsible AI governance lifecycle for SSO:
+- DEP #48485 (employee scheduling data)
+- DEP #46036 (retail traffic data)
+- Full DPA/privacy documentation
+- Cross-functional alignment between Resource Planning (Marysol Elorriaga) and the technical AI squad (Dheepan Manoharan)
+
+---
+
+## Key outcomes
+
+| Metric | Result |
+|---|---|
+| Revenue recovery opportunity | $15M over 3 years |
+| Pilot scope | 23 stores (Alberta and Quebec) |
+| Full rollout scope | 252 TELUS retail stores |
+| Planning window improvement | 40–50 days → 1–2 weeks (validated) |
+| Occupancy target range | 60–75% (vs. previous unmanaged variability) |
+
+---
+
+## Technical stack (directional)
+
+- Time-series forecasting (traffic prediction)
+- Regression modeling (labor optimization)
+- Business logic constraint layer (post-processing)
+- GCP / BigQuery / Vertex AI
+- Looker (planning team) and Tableau (store manager) dual interface
+- WFM (Workforce Management) system integration
+
+---
+
+*[← Back to portfolio index](../README.md)*
