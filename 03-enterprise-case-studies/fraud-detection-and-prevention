@@ -1,0 +1,78 @@
+# National AI Fraud Detection Platform
+**TELUS · Senior AI Product Manager · 2024 – Present**
+
+---
+
+## The problem
+
+TELUS had a fraud exposure problem that was growing faster than the manual processes designed to catch it. The existing approach relied heavily on reactive, rules-based review — slow, inconsistent, and expensive. The business did not have a clear picture of total fraud risk across its device portfolio, and by the time fraud was identified, the financial damage had compounded.
+
+The deeper issue: fraud prevention was being treated as a cost centre rather than a strategic product domain. Nobody had owned it end-to-end across devices, channels, and customer journeys at once.
+
+---
+
+## My role
+
+I was brought in to own the full product lifecycle from the ground up — diagnosis, strategy, roadmap, cross-functional delivery, and executive reporting.
+
+This was not a "PM assigned to a team already building something" situation. I identified the opportunity, quantified it, built the business case, secured executive buy-in, defined the technical architecture with engineering, and drove delivery.
+
+---
+
+## What I diagnosed
+
+- **$4M+ in annual fraud exposure** identified across 1,250+ devices once I mapped the full fraud surface
+- Existing manual processes were catching only a fraction of actual fraudulent activity
+- Operational costs for fraud review were disproportionately high relative to the value recovered
+- Customer friction from false positives was creating secondary CX damage on top of the fraud cost itself
+
+---
+
+## What I built
+
+A national AI fraud detection platform designed to operate across the full customer lifecycle — retail, digital, and call centre channels simultaneously.
+
+**Core design decisions:**
+
+- **Multi-channel architecture:** I defined the product to work across retail, digital, and call centre environments rather than solving for one channel and retrofitting. This was a harder technical scope but the only way to get a complete picture.
+- **End-to-end ownership model:** Rather than building a detection tool and handing it to operations, I designed the product so that fraud prevention was embedded into existing operational workflows rather than sitting beside them. This was the key insight that enabled the 90% cost reduction.
+- **ML-powered detection with human-in-the-loop escalation:** The system flags, prioritizes, and routes. It does not operate without human review on high-stakes decisions — a responsible AI principle I insisted on.
+
+**Roadmap sequencing:**
+
+I drove a phased rollout across channel environments, deliberately sequencing by risk level and operational readiness. I aligned go-to-market sequencing with engineering capacity and CX risk trade-offs to avoid friction spikes during rollout.
+
+---
+
+## Key outcomes
+
+| Metric | Result |
+|---|---|
+| Annual fraud exposure identified | $4M+ |
+| Operational cost reduction | 90% |
+| Month-over-month savings growth | 120% |
+| Scope | National, multi-channel |
+
+**The transformation:** Fraud prevention went from a reactive cost centre to a measurable profit centre. The product now generates quantifiable return rather than simply absorbing budget.
+
+---
+
+## What I learned
+
+The hardest part of this product was not the ML — it was the organizational positioning. Fraud had historically been owned reactively across multiple teams with no single accountable PM. Getting the right stakeholders to agree on what "success" meant before we started building was as important as any technical decision we made.
+
+The 120% month-over-month savings growth in the ramp period came directly from that early alignment work — because when the product launched, there was no ambiguity about who owned the outcome.
+
+---
+
+## Technical stack (directional)
+
+- ML-based fraud signal detection
+- Multi-channel integration: retail POS, digital, call centre
+- Real-time flagging and case routing
+- Executive-level reporting dashboard
+- MLOps pipeline with monitoring and alerting
+
+---
+
+*[← Back to portfolio index](../README.md)*
