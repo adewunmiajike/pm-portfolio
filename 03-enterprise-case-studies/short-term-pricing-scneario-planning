@@ -1,0 +1,52 @@
+# Market Mix Model — Multi-Brand Strategic Simulation
+**TELUS · Senior AI Product Manager · Mobility Pricing Portfolio · 2024 – Present**
+
+---
+
+## The problem
+
+Short-term pricing decisions — what to offer this week — are different from long-term strategic pricing decisions: how should TELUS, Koodo, and EPP be priced relative to each other over a 3–6 month horizon? The team had no tool to model simultaneous changes across multiple brands and value propositions at a strategic planning horizon.
+
+---
+
+## My role
+
+Product Manager for the Market Mix Model, the third product in the Mobility Pricing Portfolio and the long-range planning layer of the three-way synergy ecosystem.
+
+---
+
+## What I built
+
+A comprehensive scenario-planning tool for mid-to-long term (3–6 month) strategic horizons. It simulates the impact of simultaneously changing pricing and value propositions across three brands: TELUS (flagship), Koodo (flanker), and EPP (Employee Purchase Plan).
+
+**What makes this different from the Look Forward Model:**
+- The Look Forward Model is a tactical co-pilot for near-term pricing decisions
+- The Market Mix Model is a strategic simulator for brand-level portfolio decisions
+- They are designed to feed each other: short-term Look Forward outputs inform what is feasible at the brand level
+
+**The "three-way synergy" I established:**
+
+```
+Look Back Dashboard          Look Forward Model           Market Mix Model
+(What happened)       →      (What will happen)     →     (What could happen
+Historical EBITDA            Short-term volume &            across brands &
+impact analysis              financial forecasting          long horizons)
+```
+
+I defined this architecture. It was not inherited — it was a product design decision I made to ensure TELUS was building a pricing intelligence ecosystem rather than three disconnected tools.
+
+---
+
+## Roadmap I defined
+
+The long-term vision: a cross-brand optimization engine that recommends rather than just simulates. The roadmap I established expands models to Koodo and EPP with the goal of eventually moving from "what if" simulations to AI-generated optimization recommendations.
+
+---
+
+## What I learned
+
+The Market Mix Model was the hardest of the three to get stakeholder alignment on, because its value is inherently longer-horizon and harder to demonstrate in a demo. I had to build a different kind of business case — one anchored in strategic risk (what happens to market position if we keep making brand decisions without this kind of modelling) rather than near-term efficiency gains. That framing worked.
+
+---
+
+*[← Back to portfolio index](../README.md)*
