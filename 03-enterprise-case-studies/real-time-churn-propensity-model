@@ -1,0 +1,106 @@
+# Churn Prediction Model Suite
+**Bell Canada · Technical Product Manager · 2022 – 2024**
+
+---
+
+## The problem
+
+Bell was experiencing elevated customer attrition that was costing the business at a rate that had not been fully quantified. The existing approach to retention was reactive — agents attempted to save customers who had already called to cancel, with no predictive intelligence about who was at risk or what offer would actually retain them.
+
+My analysis identified a **$6M annual profitability opportunity** tied to attrition that was preventable with the right intervention, at the right time, with the right offer, for the right customer.
+
+The two models I shipped address fundamentally different moments in the customer journey. They are not variations of the same idea — they are two distinct intervention strategies requiring different architectures, different data pipelines, and different organizational workflows.
+
+---
+
+## Model 1: 1–30 Day Churn Propensity Model
+
+### What it does
+
+A batch propensity model that scores customers on their likelihood of churning within 1–30 days of a call interaction. The output feeds directly into outbound retention campaign logic.
+
+### The intervention design
+
+The model does not just predict — it drives a tiered offer engine. Customers are scored and segmented into probability brackets, and each bracket triggers a pre-defined, graduated offer:
+
+- **High propensity bracket** → most lucrative offer (e.g. significant bill credit or device upgrade)
+- **Mid propensity bracket** → mid-tier retention offer
+- **Lower propensity bracket** → lighter touch outreach
+
+Delivery is automated based on the segment: some customers receive a targeted SMS, others receive a different outbound communication. The offer is calibrated to the risk level — over-investing in low-risk customers wastes margin, under-investing in high-risk ones loses them.
+
+### Why this matters
+
+This model moved Bell from reactive retention (trying to save customers already calling to cancel) to proactive retention (reaching customers before they reach that point). The churn signal detected in the 1–30 day window gave the business enough lead time to act.
+
+---
+
+## Model 2: 0–30 Day Real-Time In-Call Churn Model
+
+### What it does
+
+A real-time scoring model that analyzes live call transcripts during an active customer-agent conversation. Within the first approximately two minutes of a call, the model scores the customer's churn risk based on keyword signals, tone, and conversation patterns — and surfaces a tiered offer directly on the agent's screen while the call is still in progress.
+
+This is fundamentally different from Model 1. There is no batch process, no outbound campaign, no lag between score and action. The intervention happens in real time, inside the conversation itself.
+
+### The intervention design
+
+The model generates a score during the first minutes of the call. Pre-defined rules then determine what pops up for the agent:
+
+- **Score bracket A** → hero offer surfaces on screen (most lucrative, reserved for highest-risk signals)
+- **Score bracket B** → mid-tier offer
+- **Score bracket C** → lighter retention play
+
+The agent sees this offer while still talking to the customer and can present it naturally in conversation — before the customer has the chance to say they want to cancel, before the interaction escalates, before the relationship is already damaged. The goal is to make the save feel like exceptional service, not a last-ditch retention attempt.
+
+The customers reaching this model are already in Bell's loyalty and retention queue — they are high-value, at-risk customers who have signaled dissatisfaction. The offer needs to be compelling enough to interrupt the churn decision in real time.
+
+---
+
+## What this project actually required
+
+This is the part that does not show up in a headline metric. The 0–30 Day model in particular required a level of cross-functional orchestration that I want to be honest about, because it is where most of the real PM work happened.
+
+**Cross-functional coordination across multiple teams:**
+Getting a real-time model into a live agent workflow requires alignment between data science, ML engineering, call centre operations, the loyalty and retention team, the platform team owning the agent desktop, compliance, and the business stakeholders defining the offer rules. Each team had different priorities, different timelines, and different definitions of "done." My job was to hold all of those dependencies in a single coherent roadmap and keep every team moving in the same direction.
+
+**Extensive testing infrastructure:**
+Real-time in-call models cannot be tested the way batch models are. You cannot just run holdout groups and wait. The model had to be tested in conditions that replicated live agent interactions — which meant building test scenarios, defining what a good score looked like, what a bad score looked like, and what the failure modes were before any real customer call was affected.
+
+**I acted as an agent tester.**
+At one point during testing I put myself in the seat of an actual call centre agent — going through the workflow exactly as an agent would, experiencing what the offer pop-up looked like, how quickly it appeared, whether the timing was right, and whether the information surfaced was actionable or confusing. This was one of the most valuable things I did on this project. No amount of spec documents or stakeholder reviews replaces the experience of using the product in the role it was designed for. I came out of that session with a list of UX and timing changes that would not have surfaced any other way.
+
+---
+
+## Validation framework
+
+- **1–30 Day model:** Controlled holdout group A/B experimentation comparing offer-triggered vs. no-intervention cohorts. This let us make a causal claim about the model's impact on attrition rather than a correlational one — important when defending a $6M business case to senior leadership.
+- **0–30 Day model:** Live testing with defined scoring thresholds, offer trigger validation, and agent feedback loops built into the testing process.
+
+**Result:** 15% reduction in customer attrition in the treatment group, validated across both models.
+
+---
+
+## Key outcomes
+
+| Metric | Result |
+|---|---|
+| Annual profitability opportunity identified | $6M |
+| Attrition reduction (treatment group) | 15% |
+| Validation method | Holdout group A/B experimentation |
+| Models shipped | 1–30 Day Propensity Model, 0–30 Day Real-Time In-Call Model |
+
+---
+
+## Technical stack (directional)
+
+- Real-time call transcript ingestion and keyword scoring (0–30 Day model)
+- Batch propensity scoring pipeline (1–30 Day model)
+- Tiered offer engine with pre-defined bracket rules
+- Agent desktop integration for real-time offer surfacing
+- A/B testing and holdout group infrastructure
+- Campaign delivery logic (SMS and outbound communications)
+
+---
+
+*[← Back to portfolio index](../README.md)*
