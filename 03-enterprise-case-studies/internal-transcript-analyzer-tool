@@ -1,0 +1,48 @@
+# Speech Analytics Platform Redesign
+**Bell Canada · Technical Product Manager · 2022 – 2024**
+
+---
+
+## The problem
+
+Bell had an internal speech analytics tool used by 2,000+ employees to analyze call centre interactions. The tool was technically functional but poorly adopted — users struggled to find what they needed, search was slow and imprecise, and the interface was not designed around how people actually worked. The result: a high-value data asset that the organization was dramatically underutilizing.
+
+---
+
+## My role
+
+I owned the redesign of the internal speech analytics tool as a product problem — not a UI refresh. The goal was to increase adoption and utility, which required understanding why people were not using it before deciding what to change.
+
+---
+
+## What I did
+
+**Discovery first:** I ran iterative user discovery sessions to understand the real failure modes. The issues were not primarily visual — they were navigational and cognitive. Users did not know how to formulate searches that would return useful results, and the information architecture did not reflect how they thought about the data.
+
+**What I shipped:**
+- Redesigned information architecture reflecting actual user mental models
+- Improved search interface with reduced cognitive load
+- UI enhancements prioritized by discovery findings, not stakeholder preferences
+- Iterative release cadence to validate adoption impact before committing to full rollout
+
+---
+
+## Key outcomes
+
+| Metric | Result |
+|---|---|
+| Adoption increase | 40% |
+| Search time reduction | 20% |
+| User base | 2,000+ internal employees |
+
+The 40% adoption increase is meaningful because this was an existing tool — increasing adoption of something that already exists requires changing behavior, not just building something new. That is a harder product problem.
+
+---
+
+## What I learned
+
+Enterprise tool redesigns fail when they are treated as design problems rather than behavioral change problems. The information architecture changes I made were informed by how users described their workflows in discovery sessions, not by design best practices in isolation. That sequencing — listen first, design second — is what drove the adoption numbers.
+
+---
+
+*[← Back to portfolio index](../README.md)*
