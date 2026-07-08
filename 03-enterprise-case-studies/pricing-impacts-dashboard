@@ -1,0 +1,50 @@
+# Look Back Dashboard — Historical Intelligence
+**TELUS · Senior AI Product Manager · Mobility Pricing Portfolio · 2024 – Present**
+
+---
+
+## The problem
+
+Before making forward-looking pricing decisions, you need to understand what actually happened when you made previous ones. TELUS did not have a reliable, automated way to analyze the EBITDA impact of past pricing decisions at the cohort level. Planning relied on manual spreadsheets and fragmented data across teams, making it difficult to identify what had worked, for whom, and under what market conditions.
+
+---
+
+## My role
+
+I owned the Look Back Dashboard as Product 2 in the Mobility Pricing Portfolio, with responsibility for requirements, stakeholder alignment, and expansion initiatives.
+
+---
+
+## What I built
+
+An interactive Looker dashboard that automates the EBITDA impact analysis of past pricing decisions — the historical intelligence layer of the pricing suite.
+
+**Core capabilities:**
+- Executive-level and drill-down dashboards for Activations, Renewals, Migrations, and Deactivations
+- Automated calculation of complex metrics including Credit Adjustments and Weighted Net Price via intermediate helper tables (e.g., mck_common.date_holiday_snapshot)
+- Market Price Points report tracking TELUS and competitor price floors across seasons and specific campaigns (e.g., Black Friday 2024 vs. 2023)
+
+**Primary use case:** Q4 Finance Floor planning — identifying at-risk base cohorts by analyzing historical performance before assessing forward-looking scenarios. This was the exact workflow that made the Look Forward Model useful; without the Look Back context, the predictions had no baseline to compare against.
+
+---
+
+## Expansion I led
+
+**Competitive device intelligence integration:** I led the ingestion of TELUS Device Price Tracker data to add equipment margin calculations and competitive device intelligence into the tool. This transformed it from a TELUS-only analytics dashboard into a true market intelligence tool.
+
+**Tracker modernization:** I oversaw the rework of manual trackers maintained by multiple teams (TELUS, Rogers, Bell) into usable, automated data sources for modeling — a data hygiene project that was foundational for the entire pricing suite, not just this product.
+
+---
+
+## How this fits the ecosystem
+
+The Look Back Dashboard is the foundation of the three-way synergy:
+1. **Look Back** analyzes what happened
+2. **Look Forward** predicts what will happen
+3. **Market Mix Model** simulates what could happen across brands and time horizons
+
+You cannot trust predictive outputs without the historical benchmarks. This product made the others credible.
+
+---
+
+*[← Back to portfolio index](../README.md)*
