@@ -1,0 +1,62 @@
+# ART — Automated Repeats Triage (Agentic AI Platform)
+**TELUS · Senior AI Product Manager · 2024 – Present**
+
+---
+
+## The problem
+
+TELUS contact centre agents were handling repeat customer calls without the benefit of a complete, synthesized picture of what had already been tried. Call transcripts existed, but the signal-to-noise ratio was too high for agents to extract insight quickly. Customers experienced this as "having to explain themselves again" — one of the most frustrating CX failure modes.
+
+The business impact: repeat contacts cost money twice (the original failed resolution plus the repeat call) and damage NPS.
+
+---
+
+## My role
+
+AI Product Manager for ART — a GenAI-powered agentic platform that analyzes call transcripts and generates personalized, actionable briefings for agents before or during customer interactions.
+
+---
+
+## What I built
+
+ART is a generative AI system that processes call transcripts and synthesizes them into "ART Podcasts" — short, personalized audio coaching briefings delivered to agents. These briefings surface the key context, prior resolution attempts, and recommended next actions for each customer interaction.
+
+**Why audio:** The format decision was deliberate. Agents are on calls — they cannot read a dashboard. A short audio briefing fits naturally into their workflow without requiring a workflow change.
+
+**Agentic architecture:** ART does not just retrieve — it reasons across transcripts, identifies patterns, and generates contextually relevant guidance. This is generative AI used for a real operational purpose, not a demo.
+
+---
+
+## Status and results
+
+ART is currently in A/B testing across 75 agents in contact centres in India and Guatemala.
+
+| Metric | Result |
+|---|---|
+| A/B test scope | 75 agents (India and Guatemala) |
+| Annualized benefit quantified | $752,108 (Q3/Q4 alone) |
+| Format | AI-generated audio briefings ("ART Podcast") |
+
+The annualized benefit of $752,108 was calculated from Q3 and Q4 data — conservatively, because the full-scale rollout benefit would be significantly higher.
+
+---
+
+## What makes this product notable
+
+Most enterprise AI products at the contact centre layer are analytics tools — dashboards that show what happened. ART is an intervention tool — it changes what happens in the next interaction. The distinction matters because it represents a different class of AI product: one where the model output is directly in the hands of a human who then acts on it in real time.
+
+That design also raises the responsible AI bar. I was deliberate about the evaluation framework: what does a good briefing look like, what does a harmful one look like, and how do we catch the difference at scale.
+
+---
+
+## Technical stack (directional)
+
+- Large Language Model (LLM) for transcript analysis and synthesis
+- Generative audio output (text-to-speech with personalization)
+- A/B test infrastructure for agent-level measurement
+- Call transcript ingestion pipeline
+- Contact centre integration layer
+
+---
+
+*[← Back to portfolio index](../README.md)*
