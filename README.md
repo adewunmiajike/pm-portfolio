@@ -76,6 +76,6 @@ More at [medium.com/@adewunmiajike](https://medium.com/@adewunmiajike)
 
 ## Connect
 
-[LinkedIn](https://www.linkedin.com/in/adewunmiajike) · [Medium](https://medium.com/@adewunmiajike) · adewunmi@adewunmi.com
+[LinkedIn](https://www.linkedin.com/in/adewunmiajike) · [Medium](https://medium.com/@adewunmiajike) · ad
 
 *Last updated: July 2026*
